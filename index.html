@@ -11,10 +11,7 @@
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
     <!-- CSS -->
-  	  <link href="css/main.css" rel="stylesheet">	
-
-    <!-- JS -->
-      <script src="js/customize.js"></script>
+  	  <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,14 +23,14 @@
   <body>
     
   <div class="controls">
-    <h1>Playing with CSS Variables and JS</h1>
+    <h1>Playing with CSS Variables and <span class="js">JS</span></h1>
 
     <div class="components">
       <label for="spacing">Spacing:</label>
-      <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+      <input type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
 
       <label for="blur">Blur:</label>
-      <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+      <input type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
 
       <label for="base">Base Color:</label>
       <input type="color" name="base" value="#ffc600">
@@ -41,7 +38,9 @@
   </div>
 
   <img src="img/istanbul.jpg" alt="Image">
-
+  
+  <!-- JS -->
+    <script src="js/customize.js"></script>
 
   </body>
 </html>

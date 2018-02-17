@@ -1,3 +1,8 @@
+/*
+	Author: Ender İMEN;
+	Date : 17.02.2018;
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,12 +14,13 @@ body{
 	font-family: monospace;
 	font-weight: bold; 
 	text-align: center;
+	text-shadow: 1px 1px gray;
 }
 
 :root {
 	--base: #ffc600;
 	--spacing: 20px;
-	--blur: 10px;
+	--blur: 5px;
 }
 
 .controls{
@@ -47,16 +53,6 @@ input[type="range"]{
 	transition: opacity .2s; 
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: var(--spacing);
-    height: var(--spacing);
-    border-radius: 50%;
-    background: #e6ee9c;
-    cursor: pointer;
-}
-
 input[type="color"]{
 	cursor: pointer;
 	border-radius: 5px;
@@ -64,21 +60,24 @@ input[type="color"]{
 
 input[type="range"]:hover{
 	cursor: pointer;
-	opacity: 1;
 }
 
 label{
-	margin-left: var(--spacing);
+	margin-left: 10px;
 }
 
 h1{
 	margin-top: 50px;
 }
 
+.js{
+	color: var(--base)
+}
+
 img{
+	height: 315px;
+	width: 556px;
 	padding: var(--spacing);
 	background: var(--base);
 	filter: blur(var(--blur));
-	height: 315px;
-	width: 556px;
 }
